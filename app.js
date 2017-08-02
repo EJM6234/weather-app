@@ -27,17 +27,16 @@ var weatherApp = {
 			temp = request.response.main.temp;
 			weather = request.response.weather[0].main;
 			icon = request.response.weather[0].icon;
-		}		
-	},
-	displayWeather: function() {
-		$(document).on("click", window, function() {
+		}
+		setTimeout(function() {
+			$("#loading").remove();
 			$("#weatherBody").append("<h2 id='cityName'>" + city + "</h2>");
-			$("#cityName").append("<h3 id='temperature'>" + Math.round(temp) + "&deg;C</h3>");
+			$("#cityName").append("<h3 id='temperature'>" + (Math.round(temp * 9 / 5 + 32)) + "&deg;F</h3>");
 			$("#temperature").append("<h3 id='weatherStatus'>" + weather + "</h3>");
-			$("#weatherStatus").append("<img src='" + icon + "'>");
-		})
-	}
+			$("#weatherStatus").append("<img src='" + icon + "'>");	
+		}, 1000)		
+	},
 }
 
+
 weatherApp.getLocation();
-weatherApp.displayWeather();
