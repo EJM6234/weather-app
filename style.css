@@ -1,0 +1,41 @@
+/*
+Clear:
+Dark Grey/Blue - #2C3E50
+Reddish Orange - #E74C3C
+White - #ECF0F1
+Light Blue - #3498DB
+Blue - #2980B9
+
+Snow:
+White - #FFFFFF
+Grey/White - #DEDEDE
+Grey - #B5B5B5
+
+Storms:
+Black - #000000
+White - #FFFFFF
+*/
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 80px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	font-size: 30px;
+	margin: 15px;
+}
+
+img {
+	margin: 0px auto;
+	display: block;
+}
